@@ -131,25 +131,6 @@ function Navbar() {
               )}
             </li>
             <li
-              onMouseEnter={() => setOpenMenu("Contact")}
-              onMouseLeave={() => setOpenMenu(null)}
-            >
-              <span>
-                news
-                <ChevronDown size={14} />
-              </span>
-              {openMenu == "News" && (
-                <ul className="dropdown">
-                  <li>
-                    <Link to="/newsone">Newsone</Link>
-                  </li>
-                  <li>
-                    <Link to="/newstwo">Newstwo</Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li
               onMouseEnter={() => setOpenMenu("Elements")}
               onMouseLeave={() => setOpenMenu(null)}
             >
@@ -169,7 +150,10 @@ function Navbar() {
               )}
             </li>
             <li>
-              <span>contact</span>
+              <span>
+                {" "}
+                <Link to="/contact">contact</Link>
+              </span>
             </li>
             <li
               onMouseEnter={() => setOpenMenu("Docs")}
@@ -185,7 +169,7 @@ function Navbar() {
                     <Link to="/docs/getting-started">Getting started</Link>
                   </li>
                   <li>
-                    <Link to="/docs/reactcomponents">ReactComponents</Link>
+                    <Link to="/docs/reactcomponents">Components</Link>
                   </li>
                 </ul>
               )}
