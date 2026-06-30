@@ -38,7 +38,7 @@ function App() {
           <Route path="/newstwo" element={<Newstwo />} />
           <Route path="/typography" element={<Typography />} />
           <Route path="/reactbutton" element={<ReactButton />} />
-          <Route path="/doc" element={<Doc />} />
+          <Route path="/docs/getting-started" element={<Doc />} />
           <Route path="/docs/reactcomponents" element={<ReactComponent />} />
           <Route path="/purchase" element={<Purchase />} />
         </Routes>
