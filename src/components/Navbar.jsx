@@ -69,10 +69,10 @@ function Navbar() {
               {openMenu == "Home" && (
                 <ul className="dropdown">
                   <li>
-                    <Link to="home 1">Home 1</Link>
+                    <Link to="/">Home 1</Link>
                   </li>
                   <li>
-                    <Link to="home 2>">Home 2</Link>
+                    <Link to="/hometwo">Home 2</Link>
                   </li>
                 </ul>
               )}
